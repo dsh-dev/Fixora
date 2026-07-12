@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>New Complaint</title>
+
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+rel="stylesheet">
+
+<style>
+
+body{
+    background:#f4f7fb;
+}
+
+.card{
+    border:none;
+    border-radius:20px;
+}
+
+textarea{
+    resize:none;
+}
+
+#aiResult{
+    display:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container mt-5">
+
+<div class="row justify-content-center">
+
+<div class="col-lg-8">
+
+<div class="card shadow">
+
+<div class="card-body p-4">
+
+<h2>
+
+<i class="bi bi-chat-square-text"></i>
+
+Submit Complaint
+
+</h2>
+
+<hr>
+
+<form
+action="/complaint"
+method="POST"
+enctype="multipart/form-data">
+
+<div class="mb-3">
+
+<label class="form-label">
+
+Complaint Title
+
+</label>
+
+<input
+type="text"
+class="form-control"
+name="title"
+id="title"
+required>
+
+</div>
+
+<div class="mb-3">
+
+<label class="form-label">
+
+Category
+
+</label>
+
+<select
+class="form-select"
+name="category">
+
+<option value="">AI will detect automatically</option>
+
+<option>Network</option>
+<option>Electrical</option>
+<option>Plumbing</option>
+<option>Food</option>
+<option>Cleaning</option>
+<option>Security</option>
+<option>Other</option>
+
+</select>
+
+</div>
+
+<div class="mb-3">
+
+<label class="form-label">
+
+Description
+
+</label>
+
+<textarea
+class="form-control"
+rows="6"
+name="description"
+id="description"
+required></textarea>
+
+</div>
+
+<div class="mb-3">
+
+<label class="form-label">
+
+Upload Image
+
+</label>
+
+<input
+type="file"
+class="form-control"
+name="image">
+
+</div>
+
+<button
+type="button"
+id="analyzeBtn"
+class="btn btn-primary">
+
+<i class="bi bi-robot"></i>
+
+Analyze with AI
+
+</button>
+
+<hr>
+
+<div
+id="aiResult"
+class="card border-success mt-3">
+
+<div class="card-header bg-success text-white">
+
+🤖 AI Analysis
+
+</div>
+
+<div class="card-body">
+
+<p>
+
+<strong>Category:</strong>
+
+<span id="aiCategory"></span>
+
+</p>
+
+<p>
+
+<strong>Priority:</strong>
+
+<span id="aiPriority"></span>
+
+</p>
+
+<p>
+
+<strong>Summary:</strong>
+
+</p>
+
+<div
+class="alert alert-light"
+id="aiSummary">
+
+</div>
+
+</div>
+
+</div>
+
+<br>
+
+<button
+type="submit"
+class="btn btn-success">
+
+<i class="bi bi-send"></i>
+
+Submit Complaint
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="/js/ai.js"></script>
+
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+
+</html>

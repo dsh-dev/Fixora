@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+Notifications
+</title>
+
+</head>
+
+
+<body>
+
+
+<h1>
+My Notifications 🔔
+</h1>
+
+
+<a href="/dashboard">
+Back to Dashboard
+</a>
+
+
+<hr>
+
+
+
+<% notifications.forEach(function(n){ %>
+
+
+<div style="
+border:1px solid black;
+padding:15px;
+margin:10px;
+">
+
+
+<p>
+<%= n.message %>
+</p>
+
+
+<p>
+
+<%= n.created_at %>
+
+</p>
+
+
+
+<% if(!n.is_read){ %>
+
+
+<a href="/notifications/read/<%= n.id %>">
+
+Mark as Read
+
+</a>
+
+
+<% } else { %>
+
+
+<p>
+✅ Read
+</p>
+
+
+<% } %>
+
+
+</div>
+
+
+<% }) %>
+
+
+
+</body>
+
+</html>
