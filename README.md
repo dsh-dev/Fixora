@@ -229,11 +229,9 @@ node app.js
 
 🎓 B.Tech – Computer Science & Engineering
 
-📧 Email: your-email@example.com
+📧 Email: dimplesaiharika@gmail.com
 
-🔗 LinkedIn: https://linkedin.com/in/your-profile
-
-💻 GitHub: https://github.com/your-username
+🔗 LinkedIn: https://www.linkedin.com/in/kalaga-dimple-sai-harikha-9405a62a2/
 
 ---
 
