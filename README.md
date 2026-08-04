@@ -84,25 +84,6 @@ Administrators can review AI insights, update complaint status, and efficiently 
         │
         ▼
  Status Update & Resolution
-```
-
----
-
-# 📸 Screenshots
-
-> Replace these images with your own screenshots.
-
-| Home | Student Dashboard |
-|------|-------------------|
-| ![](screenshots/home.png) | ![](screenshots/student-dashboard.png) |
-
-| Complaint Form | AI Analysis |
-|----------------|-------------|
-| ![](screenshots/complaint.png) | ![](screenshots/analysis.png) |
-
-| Admin Dashboard | Complaint Details |
-|-----------------|-------------------|
-| ![](screenshots/admin-dashboard.png) | ![](screenshots/details.png) |
 
 ---
 
