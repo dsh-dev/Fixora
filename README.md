@@ -239,8 +239,5 @@ node app.js
 
 <div align="center">
 
-### ⭐ If you like this project, don't forget to star the repository!
-
-Made with ❤️ using Node.js, Express.js, MySQL, and AI.
 
 </div>
