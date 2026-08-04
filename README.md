@@ -84,8 +84,11 @@ Administrators can review AI insights, update complaint status, and efficiently 
         │
         ▼
  Status Update & Resolution
+```
 
 ---
+
+
 
 # 📂 Project Structure
 
